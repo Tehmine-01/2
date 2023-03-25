@@ -1,0 +1,363 @@
+* {
+	overflow: hidden;
+
+	padding: 0;
+	margin: 0;
+}
+
+html, main {
+	height: 100%;
+}
+
+html {
+	user-select: none;
+}
+
+main {
+	width: 100%;
+
+	justify-content: center;
+	align-items: center;
+
+	display: flex;
+}
+
+body {
+	height: 100%;
+
+	background-color: #FFC1B3;
+
+	margin: auto;	
+}
+
+h1 {
+	text-align: center;
+
+	color: green;
+}
+
+img {
+	width: 90px;
+
+	display: flex;
+
+	margin: auto;
+	border-radius: 50px;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+input {
+	width: 160px;
+
+	background-color: #C0D7A9;
+
+	border: none;
+	outline: none;
+	padding: 3px;
+}
+
+input[type=file] {
+	height: 11px;
+}
+
+/*input[type=text]:nth-of-type(1n) {
+	width: 110px;
+}*/
+
+@media screen and (max-width: 1100px) {
+.topanav div {
+	width: 125%;
+
+	flex-basis: 100%;
+	text-align: left;
+	flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 1100px) {
+	body {
+		background-color: red;
+	}
+
+.div-img {
+	display: none;
+}
+
+.tbody2 {
+	display: none;
+}
+
+.nav {
+	width: 117%;
+
+	flex-wrap: wrap;
+}
+
+.top {
+	width: 100%;
+
+	align-items: flex-start;
+
+	flex-wrap: wrap;
+	flex-direction: column;
+} 
+
+.th {
+	width: 99%;
+
+	display: flex;
+}
+
+.td0 {
+	width: 100%;
+}
+
+}
+
+.div-img {
+	width: 20%;
+
+	padding: 13px;
+	border: 1px solid white;
+}
+
+.img {
+	visibility: hidden;
+}
+
+.table {
+	background-color: #C0D7A9;
+
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.tbody1 {
+	font-family: Consolas;
+
+	counter-reset: numbering;
+}
+
+.tr0 {
+	flex-basis:  100%;
+	display: flex;
+}
+
+.th0 {
+	flex-basis:  29%;
+	text-align: right;
+
+	font-weight: bold;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.td0 {
+	flex-basis: 74%;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.tr {
+	flex-basis:  100%;
+	display: flex;
+}
+
+.th {
+	flex-basis:  24%;
+
+	text-align: right;
+
+	font-weight: bold;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 2px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.td {
+	flex-basis:  85%;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.a {
+	flex-basis: 100%;
+	display: flex;
+}
+
+.contenter{
+	flex-basis: 80%;
+}
+
+.tr1 {
+	display: flex;
+}
+
+.th1 {
+	flex-basis: 24%;
+
+	text-align: right;
+
+	font-weight: bold;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 2px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.td1 {
+	flex-basis: 30%;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.tr2 {
+	display: flex;
+}
+
+.th_language {
+	flex-basis: 29%;
+
+	text-align: center;
+	font-family: Comic Sans MS;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 0px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.th2 {
+	flex-basis: 24%;
+
+	text-align: center;
+	font-weight: bold;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.td2 {
+	flex-basis: 25%;
+
+	text-align: center;
+	font-family: Tempus Sans ITC;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.th3 {
+	flex-basis: 21%;
+
+	text-align: center;
+	font-weight: bold;
+
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px;
+	
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+.tbody1 p::before {
+	counter-increment: numbering;
+	content: counter(numbering) ".";
+	float: left;
+}
+
+.tbody1 p::after {
+	content:":";
+}
+
+.parenthesis:before { 
+	content: '\0028';
+}
+
+.parenthesis:after { 
+	content: '\0029';
+}
+
+.prime:before {
+	content: '\0027';
+}
+
+.prime:after { 
+	content: '\0027';
+}
+
+.squarebrecket:before {
+	content: '\005B';
+}
+
+.squarebrecket:after {
+	content: '\005D';
+}
+
+.arrowhead:before {
+	content: '\02C2';
+}
+
+.arrowhead:after {
+	content: '\02C3';
+}
+
+a:link {
+	color: hotpink;
+	text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+	color: red;
+}
+
+
+a:active {
+	color: yellow;
+}
